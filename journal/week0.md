@@ -2,7 +2,7 @@
 
 ## Required Homework
 
-### Install AWS CLI
+### Install and verify AWS CLI
 
 I was able to install AWS CLI using VScode and Gitpod.
 
