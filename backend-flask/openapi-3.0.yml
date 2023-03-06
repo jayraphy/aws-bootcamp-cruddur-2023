@@ -148,7 +148,23 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Message'
-
+  /api/activities/notifications:
+    get:
+      description: 'Return a feed of activities for all of those that I follow'
+      tags:
+        -activities
+      parameters: []
+      responses:
+        '200':
+          description: Returns an array of activities
+          content:
+            application/json:
+              #schema is just a way of refactoring this
+              schema:
+                type: array
+                items:
+                  #reference it to the Acitivity line- I expect to get items, an array of objects, from this endpoint. 
+                  $ref: '#/components/schemas/Activity'
 components:
   schemas:
     Activity:
